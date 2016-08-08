@@ -1,0 +1,16 @@
+
+<h3> Here is your attempt: </h3>
+<%= @result[:query] %>
+<p> <%= @result %> </p>
+
+<ul>
+  <li> Your word :<%= @result[:query] %></li>
+  <li> Time taken to answer: <%= @result[:time] %></li>
+  <li> Translation: <%= @result[:translation] %></li>
+  <li> Your score: <%= @result[:score] %></li>
+  <li> Why? <%= @result[:message] %></li>
+</ul>
+
+<p>
+ The grid: <%= @result[:grid].join(" ") %>
+</p>
